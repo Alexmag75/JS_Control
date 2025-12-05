@@ -1,0 +1,33 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+        margin: 15px auto;
+        padding: 15px;
+    }
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .input-area {
+        gap: 10px;
+        min-width: unset;
+    }
+    #pairInput {
+        padding: 6px;
+    }
+    .input-area button {
+        min-width: 105px;
+        padding: 6px 8px;
+        font-size: 0.85em;
+    }
+    .list-container {
+        gap: 10px;
+    }
+    .list-area {
+        min-width: 65%;
+        width: 65%;
+    }
+    .button-stack button {
+        min-width: 100px;
+        font-size: 0.85em;
+    }
+}

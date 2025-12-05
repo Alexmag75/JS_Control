@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.wrapper {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #A9D0F5;
+    border: 1px solid #ccc;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.input-area {
+    flex-grow: 1;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.input-area label {
+    white-space: nowrap;
+    font-weight: bold;
+}
+#pairInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.list-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.list-area {
+    flex-grow: 1;
+    min-width: 58%;
+    width: 88%;
+}
+#pairList {
+    width: 100%;
+    min-height: 200px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.button-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+button {
+    min-width: 120px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+    background-color: #dddddd;
+}
+.pairList p {
+    padding: 3px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+.pairList p:hover {
+    background-color: #f0f0f0;
+}
+.pairList p.selected {
+    background-color: #A9D0F5;
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#errorMessageText {
+    color: #cc0000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #A9D0F5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+

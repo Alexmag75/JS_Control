@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margarit_KRJS_task1</title>
+  <link rel="stylesheet" href="style_main.css">
+  <link rel="stylesheet" href="style_769-1279.css">
+  <link rel="stylesheet" href="style_481-768.css">
+  <link rel="stylesheet" href="style_480.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <h2>Test</h2>
+    <header class="input-area">
+      <label for="pairInput">Name/Value Pair</label>
+      <input type="text" id="pairInput" placeholder="Name=Value"> <button onclick="addPair()">Add</button>
+    </header>
+    <label>Name/Value Pair List</label>
+
+    <div class="list-container">
+      <div class="list-area">
+        <div class="pairList" id="pairList" >
+
+        </div>
+      </div>
+      <div class="button-stack">
+        <button onclick="sortPairName()">Sort by Name</button>
+        <button onclick="sortPairValue()">Sort by Value</button>
+        <button onclick="deletePair()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="errorModal" class="modal">
+  <div class="modal-content">
+    <p id="errorMessageText"></p>
+    <button onclick="closeErrorModal()">ОК</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

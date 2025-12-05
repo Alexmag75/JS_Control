@@ -1,0 +1,28 @@
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .wrapper {
+        margin: 40px auto;
+    }
+    .container {
+        padding: 30px;
+    }
+    .input-area {
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+    .list-container {
+        gap: 20px;
+    }
+    .list-area {
+        min-width: 70%;
+        width: 70%;
+    }
+    .list-area button {
+        min-width: 130px;
+    }
+    .button-stack button {
+        min-width: 120px;
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+
+}
